@@ -1,0 +1,2 @@
+INDEX VERSION 1.130+D:\Eclipse\SVN\.metadata\.plugins\org.eclipse.jdt.core
+2497711529.index

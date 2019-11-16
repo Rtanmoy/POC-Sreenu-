@@ -1,0 +1,12 @@
+2019-11-14 10:30:19,961 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-11-14 10:45:18,163 [Worker-6] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-11-14 12:07:34,910 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-11-14 12:11:10,032 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.sreenutech:SvanDemo:1.0-SNAPSHOT @ D:\Eclipse\SVN\SvanDemo\pom.xml.
+2019-11-14 12:11:15,182 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SvanDemo/src/main/java
+2019-11-14 12:11:15,186 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SvanDemo/src/main/resources
+2019-11-14 12:11:15,188 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SvanDemo/src/test/java
+2019-11-14 12:11:15,190 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SvanDemo/src/test/resources
+2019-11-14 12:11:27,022 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-14 12:11:27,057 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-11-14 12:11:27,061 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-14 12:11:27,083 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

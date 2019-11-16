@@ -1,0 +1,1258 @@
+!SESSION 2019-11-14 10:26:39.046 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.core 4 0 2019-11-14 10:26:52.735
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.core [553]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [565]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+              javax.xml.ws [38]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.ui 4 0 2019-11-14 10:26:52.831
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.ui [554]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="1.0.400.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.consumption.core [553]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [565]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                     javax.xml.ws [38]
+                       Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.core [555]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.ui [570]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+       org.eclipse.jst.ws.cxf.ui [559]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.core 4 0 2019-11-14 10:26:52.845
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.core [555]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.ui [570]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+              javax.xml.ws [38]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [565]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.core 4 0 2019-11-14 10:26:52.873
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.core [556]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [565]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+              javax.xml.ws [38]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.ui 4 0 2019-11-14 10:26:52.886
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.ui [557]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [565]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+              javax.xml.ws [38]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.creation.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.creation.core; bundle-version="1.0.500.v201701262158"
+       org.eclipse.jst.ws.cxf.creation.core [556]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.core [555]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.ui [570]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="1.0.400.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.consumption.ui [554]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="1.0.400.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.consumption.core [553]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+              org.eclipse.jst.ws.cxf.ui [559]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.ui 4 0 2019-11-14 10:26:52.901
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.ui [559]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                     javax.xml.ws [38]
+                       Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [565]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.jaxws.core 4 0 2019-11-14 10:26:52.910
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.core [565]
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+       javax.xml.ws [38]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Import-Package: javax.xml.ws.http; version="2.1.0"
+    -> Export-Package: javax.xml.ws.http; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.jaxws.ui 4 0 2019-11-14 10:26:52.919
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.ui [570]
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+       javax.xml.ws [38]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Import-Package: javax.xml.ws.http; version="2.1.0"
+    -> Export-Package: javax.xml.ws.http; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-11-14 10:26:52.928
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [604]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [90]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.23.0.v20170411-1844"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [618]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-11-14 10:26:52.940
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [606]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.23.1.v20170623-0008"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [604]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [90]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.23.0.v20170411-1844"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [618]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-11-14 10:26:53.444
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [618]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [90]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-11-14 10:29:50.269
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-11-14 10:29:50.269
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-14 10:30:22.270
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rtanm'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-11-14 10:30:30.896
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+!SESSION 2019-11-14 10:43:53.627 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/D:/Eclipse/SVN/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.core 4 0 2019-11-14 10:43:57.534
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.core [553]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                     javax.xml.ws [38]
+                       Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [565]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.ui 4 0 2019-11-14 10:43:57.565
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.ui [554]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="1.0.400.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.consumption.core [553]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.core [555]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.ui [570]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                            javax.xml.ws [38]
+                              Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.core [565]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+       org.eclipse.jst.ws.cxf.ui [559]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.core 4 0 2019-11-14 10:43:57.596
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.core [555]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.ui [570]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+              javax.xml.ws [38]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [565]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.core 4 0 2019-11-14 10:43:57.690
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.core [556]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                     javax.xml.ws [38]
+                       Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [565]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.ui 4 0 2019-11-14 10:43:57.721
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.ui [557]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.creation.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.creation.core; bundle-version="1.0.500.v201701262158"
+       org.eclipse.jst.ws.cxf.creation.core [556]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.core [555]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.ui [570]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                            javax.xml.ws [38]
+                              Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.core [565]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="1.0.400.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.consumption.ui [554]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="1.0.400.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.consumption.core [553]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+              org.eclipse.jst.ws.cxf.ui [559]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.ui 4 0 2019-11-14 10:43:57.753
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.ui [559]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                     javax.xml.ws [38]
+                       Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [565]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.jaxws.core 4 0 2019-11-14 10:43:57.784
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.core [565]
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+       javax.xml.ws [38]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Import-Package: javax.xml.ws.http; version="2.1.0"
+    -> Export-Package: javax.xml.ws.http; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.jaxws.ui 4 0 2019-11-14 10:43:57.799
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.ui [570]
+  Unresolved requirement: Import-Package: javax.xml.ws.http; version="2.1.0"
+    -> Export-Package: javax.xml.ws.http; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+       javax.xml.ws [38]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-11-14 10:43:57.831
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [604]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [90]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.23.0.v20170411-1844"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [618]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-11-14 10:43:57.831
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [606]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.23.1.v20170623-0008"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [604]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [90]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.23.0.v20170411-1844"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [618]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-11-14 10:43:57.846
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [618]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [90]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jface 2 0 2019-11-14 10:44:57.522
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-11-14 10:44:57.522
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11c372e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4b59a1c1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-11-14 10:45:02.617
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-11-14 10:45:02.617
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-14 10:45:18.827
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rtanm'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-11-14 10:45:25.623
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.team.svn.core.svnnature 4 0 2019-11-14 11:27:13.678
+!MESSAGE SVN: '0x00400006: Validate Repository Location' operation finished with error
+!SUBENTRY 1 org.eclipse.team.svn.core.svnnature 4 0 2019-11-14 11:27:13.678
+!MESSAGE SVN: '0x00400006: Validate Repository Location' operation finished with error: Selected SVN connector library is not available or cannot be loaded.
+If you selected native JavaHL connector, please check if binaries are available or install and select pure Java Subversion connector from the plug-in connectors update site.
+If connectors already installed then you can change the selected one at: Window->Preferences->Team->SVN->SVN Connector.
+!STACK 0
+org.eclipse.team.svn.core.operation.UnreportableException: Selected SVN connector library is not available or cannot be loaded.
+If you selected native JavaHL connector, please check if binaries are available or install and select pure Java Subversion connector from the plug-in connectors update site.
+If connectors already installed then you can change the selected one at: Window->Preferences->Team->SVN->SVN Connector.
+	at org.eclipse.team.svn.core.extension.factory.ISVNConnectorFactory$1.createConnector(ISVNConnectorFactory.java:118)
+	at org.eclipse.team.svn.core.svnstorage.SVNRepositoryLocation.newProxyInstance(SVNRepositoryLocation.java:847)
+	at org.eclipse.team.svn.core.svnstorage.SVNRepositoryLocation.acquireSVNProxy(SVNRepositoryLocation.java:614)
+	at org.eclipse.team.svn.core.utility.SVNUtility.validateRepositoryLocation(SVNUtility.java:960)
+	at org.eclipse.team.svn.ui.wizard.shareproject.AddRepositoryLocationPage$3.runImpl(AddRepositoryLocationPage.java:214)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:82)
+	at org.eclipse.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:40)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:104)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:90)
+	at org.eclipse.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:55)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.team.svn.core.svnnature 4 0 2019-11-14 11:27:33.782
+!MESSAGE SVN: '0x00000230: Get Repository Folder Children' operation finished with error
+!SUBENTRY 1 org.eclipse.team.svn.core.svnnature 4 0 2019-11-14 11:27:33.782
+!MESSAGE Get repository folder children operation failed.
+!STACK 0
+org.eclipse.team.svn.core.operation.UnreportableException: Selected SVN connector library is not available or cannot be loaded.
+If you selected native JavaHL connector, please check if binaries are available or install and select pure Java Subversion connector from the plug-in connectors update site.
+If connectors already installed then you can change the selected one at: Window->Preferences->Team->SVN->SVN Connector.
+	at org.eclipse.team.svn.core.extension.factory.ISVNConnectorFactory$1.createConnector(ISVNConnectorFactory.java:118)
+	at org.eclipse.team.svn.core.svnstorage.SVNRepositoryLocation.newProxyInstance(SVNRepositoryLocation.java:847)
+	at org.eclipse.team.svn.core.svnstorage.SVNRepositoryLocation.acquireSVNProxy(SVNRepositoryLocation.java:614)
+	at org.eclipse.team.svn.core.svnstorage.SVNRepositoryContainer.getChildren(SVNRepositoryContainer.java:77)
+	at org.eclipse.team.svn.core.operation.remote.GetRemoteFolderChildrenOperation.runImpl(GetRemoteFolderChildrenOperation.java:76)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:82)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:104)
+	at org.eclipse.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:82)
+	at org.eclipse.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:40)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:104)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:90)
+	at org.eclipse.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:55)
+	at org.eclipse.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:37)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.team.svn.core.svnnature 4 0 2019-11-14 11:27:33.853
+!MESSAGE SVN: '0x00400107: Get Repository Resource Revision' operation finished with error
+!SUBENTRY 1 org.eclipse.team.svn.core.svnnature 4 0 2019-11-14 11:27:33.853
+!MESSAGE Get repository resource revision operation failed.
+!STACK 0
+org.eclipse.team.svn.core.operation.UnreportableException: Selected SVN connector library is not available or cannot be loaded.
+If you selected native JavaHL connector, please check if binaries are available or install and select pure Java Subversion connector from the plug-in connectors update site.
+If connectors already installed then you can change the selected one at: Window->Preferences->Team->SVN->SVN Connector.
+	at org.eclipse.team.svn.core.extension.factory.ISVNConnectorFactory$1.createConnector(ISVNConnectorFactory.java:118)
+	at org.eclipse.team.svn.core.svnstorage.SVNRepositoryLocation.newProxyInstance(SVNRepositoryLocation.java:847)
+	at org.eclipse.team.svn.core.svnstorage.SVNRepositoryLocation.acquireSVNProxy(SVNRepositoryLocation.java:614)
+	at org.eclipse.team.svn.core.svnstorage.SVNRepositoryResource.getRevision(SVNRepositoryResource.java:95)
+	at org.eclipse.team.svn.ui.operation.GetRemoteResourceRevisionOperation.runImpl(GetRemoteResourceRevisionOperation.java:40)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:82)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:104)
+	at org.eclipse.team.svn.core.operation.CompositeOperation.runImpl(CompositeOperation.java:99)
+	at org.eclipse.team.svn.core.operation.AbstractActionOperation.run(AbstractActionOperation.java:82)
+	at org.eclipse.team.svn.core.operation.LoggedOperation.run(LoggedOperation.java:40)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTask(ProgressMonitorUtility.java:104)
+	at org.eclipse.team.svn.core.utility.ProgressMonitorUtility.doTaskExternal(ProgressMonitorUtility.java:90)
+	at org.eclipse.team.svn.ui.utility.DefaultCancellableOperationWrapper.run(DefaultCancellableOperationWrapper.java:55)
+	at org.eclipse.team.svn.ui.utility.ScheduledOperationWrapper.run(ScheduledOperationWrapper.java:37)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2019-11-14 12:06:49.337 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/D:/Eclipse/SVN/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.core 4 0 2019-11-14 12:06:52.461
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.core [553]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [565]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                     javax.xml.ws [38]
+                       Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.consumption.ui 4 0 2019-11-14 12:06:52.531
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.consumption.ui [554]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="1.0.400.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.consumption.core [553]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.core [555]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.core [565]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                            javax.xml.ws [38]
+                              Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.ui [570]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+       org.eclipse.jst.ws.cxf.ui [559]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.core 4 0 2019-11-14 12:06:52.573
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.core [555]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [565]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+              javax.xml.ws [38]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.ui [570]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.core 4 0 2019-11-14 12:06:52.585
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.core [556]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [565]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+              javax.xml.ws [38]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.creation.ui 4 0 2019-11-14 12:06:52.604
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.creation.ui [557]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+       org.eclipse.jst.ws.cxf.ui [559]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.core [565]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                     javax.xml.ws [38]
+                       Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.core [555]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+                     org.eclipse.jst.ws.jaxws.ui [570]
+                       Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                         -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.ui; bundle-version="1.0.400.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.consumption.ui [554]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.consumption.core; bundle-version="1.0.400.v201701262158"; singleton:="true"
+              org.eclipse.jst.ws.cxf.consumption.core [553]
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="0.4.3"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.ui; bundle-version="1.0.300.v201309232152"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.creation.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.creation.core; bundle-version="1.0.500.v201701262158"
+       org.eclipse.jst.ws.cxf.creation.core [556]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.cxf.ui 4 0 2019-11-14 12:06:52.620
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.cxf.ui [559]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.jaxws.core [565]
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+              javax.xml.ws [38]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.cxf.core; bundle-version="[1.0.0,1.2.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.cxf.core; bundle-version="1.1.300.v201701262158"; singleton:="true"
+       org.eclipse.jst.ws.cxf.core [555]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.core; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.core; bundle-version="1.0.500.v201701262158"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.jaxws.ui; bundle-version="[1.0.0,1.1.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.ws.jaxws.ui; bundle-version="1.0.401.v201504291921"; singleton:="true"
+              org.eclipse.jst.ws.jaxws.ui [570]
+                Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+                  -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+         Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+           -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.jaxws.core 4 0 2019-11-14 12:06:52.638
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.core [565]
+  Unresolved requirement: Import-Package: javax.xml.ws.http; version="2.1.0"
+    -> Export-Package: javax.xml.ws.http; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+       javax.xml.ws [38]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.jaxws.ui 4 0 2019-11-14 12:06:52.651
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.jaxws.ui [570]
+  Unresolved requirement: Import-Package: javax.xml.ws; version="2.1.0"
+    -> Export-Package: javax.xml.ws; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+       javax.xml.ws [38]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Import-Package: javax.xml.ws.http; version="2.1.0"
+    -> Export-Package: javax.xml.ws.http; bundle-symbolic-name="javax.xml.ws"; bundle-version="2.1.0.v200902101523"; version="2.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.bugzilla.core 4 0 2019-11-14 12:06:52.671
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.core [604]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [90]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.23.0.v20170411-1844"; singleton:="true"
+       org.eclipse.mylyn.commons.xmlrpc [618]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2019-11-14 12:06:52.703
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [606]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.bugzilla.core; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.core; bundle-version="3.23.1.v20170623-0008"; singleton:="true"
+       org.eclipse.mylyn.bugzilla.core [604]
+         Unresolved requirement: Require-Bundle: org.apache.xmlrpc
+           -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+              org.apache.xmlrpc [90]
+                Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.xmlrpc; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.xmlrpc; bundle-version="3.23.0.v20170411-1844"; singleton:="true"
+              org.eclipse.mylyn.commons.xmlrpc [618]
+                Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.commons.xmlrpc 4 0 2019-11-14 12:06:52.714
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.xmlrpc [618]
+  Unresolved requirement: Require-Bundle: org.apache.xmlrpc; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.apache.xmlrpc; bundle-version="3.0.0.v20100427-1100"
+       org.apache.xmlrpc [90]
+         Unresolved requirement: Import-Package: javax.xml.bind; version="[2.2.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1634)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1613)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1585)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1528)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jface 2 0 2019-11-14 12:07:23.884
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-11-14 12:07:23.884
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64547a83,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2b3e2039,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2019-11-14 12:07:28.062
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2019-11-14 12:07:28.062
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-14 12:07:35.635
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\rtanm'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-11-14 12:07:42.776
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-11-14 12:11:27.024
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-11-14 12:11:27.062
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
