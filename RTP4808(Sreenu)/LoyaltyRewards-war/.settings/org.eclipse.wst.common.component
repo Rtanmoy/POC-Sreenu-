@@ -3,6 +3,15 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="LoyaltyRewardsSvcResourceLayer-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/LoyaltyRewardsSvcResourceLayer/LoyaltyRewardsSvcResourceLayer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="LoyaltyRewardsSvcProcessLayer-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/LoyaltyRewardsSvcProcessLayer/LoyaltyRewardsSvcProcessLayer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="LoyaltyRewardsSvcIntegrationLayer-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/LoyaltyRewardsSvcIntegrationLayer/LoyaltyRewardsSvcIntegrationLayer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="LoyaltyRewards-war"/>
         <property name="java-output-path" value="/LoyaltyRewards-war/target/classes"/>
     </wb-module>

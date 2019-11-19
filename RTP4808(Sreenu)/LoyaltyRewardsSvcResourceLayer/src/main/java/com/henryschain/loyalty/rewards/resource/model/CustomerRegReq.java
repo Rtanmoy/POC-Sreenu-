@@ -1,7 +1,9 @@
 package com.henryschain.loyalty.rewards.resource.model;
 
-import lombok.Data;
+import javax.xml.bind.annotation.XmlRootElement;
 
+import lombok.Data;
+@XmlRootElement
 @Data
 public class CustomerRegReq {
  private ClientDetails clientDetails;

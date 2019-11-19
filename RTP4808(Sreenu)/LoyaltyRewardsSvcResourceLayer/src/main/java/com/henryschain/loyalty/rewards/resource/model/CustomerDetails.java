@@ -12,4 +12,5 @@ public class CustomerDetails {
 	private String website;
 	private String organizationName;
 	private String pinCode;
+	
 }
